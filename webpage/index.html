@@ -19,6 +19,7 @@
     .navbar-custom {
       background-color:rgb(176, 14, 212);
     }
+
   </style>
 
 
@@ -29,7 +30,7 @@
 
   <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home </a>
+      <a class="navbar-brand" href="index.html"> Home </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
         aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +44,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="background2.html">background 2</a>
+            <a class="nav-link" href="videogame_data.html">Browse Videogames</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="background3.html">background 3</a>
@@ -71,17 +72,17 @@
       <div class="col-sm-6">
         <div class="container-fluid border-primary" style="padding-left:30px; padding-right:30px">
         <div class="card border-success mb-3" style="min-width:200px">
-          <div class="card-header">Your Videogame Preferences</div>
+          <div class="card-header">How About A Little Survey?</div>
           <div class="card-body">
-            <h4 class="card-title">How About A Little Survey?</h4>
+            <h4 class="card-title">Your Videogame Preferences</h4>
             <p class="card-text">What ESRB rating(s) would you like to see recommended?</p>
               <form action="/action_page.php">
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> E (Everyone)</label><br>
+                <label for="esrb1"> E (Everyone)</label><br>
                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> T (Teen)</label><br>
+                <label for="esrb2"> T (Teen)</label><br>
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> M (Mature)</label><br>
+                <label for="esrb3"> M (Mature)</label><br>
               <div class="form-group">
                 <label for="exampleSelect1" class="form-label mt-4">What game platform would you like to see recommended?</label>
                 <select class="form-select" id="exampleSelect1">
@@ -113,10 +114,8 @@
                 <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
                 <div class="invalid-feedback">Sorry, you may have misspelled that.</div>
               </div>
-              <br><br>
-
-              <input type="submit" value="Submit">
-
+              <br>
+                <input type="submit" value="Submit" type="button" class="btn btn-primary btn-lg">
             </form>
           </div>
         </div>
