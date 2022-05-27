@@ -14,7 +14,10 @@
 
   <style>
     body {
-      background-image: url("images/WScwE1.jpg");
+      background-image: url("images/zrNYQf.webp");
+    }
+    .navbar-custom {
+      background-color:rgb(176, 14, 212);
     }
   </style>
 
@@ -24,7 +27,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Home </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -70,18 +73,51 @@
         <div class="card border-success mb-3" style="min-width:200px">
           <div class="card-header">Your Videogame Preferences</div>
           <div class="card-body">
-            <h4 class="card-title">Please check all of the desired boxes below:</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h4 class="card-title">How About A Little Survey?</h4>
+            <p class="card-text">What ESRB rating(s) would you like to see recommended?</p>
               <form action="/action_page.php">
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
+                <label for="vehicle1"> E (Everyone)</label><br>
                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
+                <label for="vehicle2"> T (Teen)</label><br>
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br><br>
-                <input type="submit" value="Submit">
-              </form>
+                <label for="vehicle3"> M (Mature)</label><br>
+              <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">What game platform would you like to see recommended?</label>
+                <select class="form-select" id="exampleSelect1">
+                  <option>Xbox Series X</option>
+                  <option>Xbox One</option>
+                  <option>Xbox 360</option>
+                  <option>Xbox</option>
+                  <option>WiiU</option>
+                  <option>Wii</option>
+                  <option>Switch</option>
+                  <option>PSP</option>
+                  <option>PlayStation Vita</option>
+                  <option>PlayStation 5</option>
+                  <option>PlayStation 4</option>
+                  <option>PlayStation 3</option>
+                  <option>PlayStation 2</option>
+                  <option>PlayStation</option>
+                  <option>PC</option>
+                  <option>Nintendo 64</option>
+                  <option>GameCube</option>
+                  <option>Game Boy Advance</option>
+                  <option>DS</option>
+                  <option>Dreamcast</option>
+                  <option>3DS</option>
+                </select>
+              </div>
+              <div class="form-group has-danger">
+                <label class="form-label mt-4" for="inputInvalid">What game title would you like comparable games for?</label>
+                <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+                <div class="invalid-feedback">Sorry, you may have misspelled that.</div>
+              </div>
+              <br><br>
+
+              <input type="submit" value="Submit">
+
+            </form>
           </div>
         </div>
         </div>
