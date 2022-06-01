@@ -74,11 +74,10 @@ Placeholder
 
 
 
-[Annette Heredia](https://github.com/AnnetteHeredia)
-
 [Amy Castilon](https://github.com/amycastillon)
 
 [Rachel Dowdy](https://github.com/radowtay)
 
 [Josh Watson](https://github.com/JWatson1102)
 
+[Annette Heredia](https://github.com/AnnetteHeredia)
