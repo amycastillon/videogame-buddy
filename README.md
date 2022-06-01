@@ -1,5 +1,6 @@
-
-# Video Game Buddy
+<h1 text-aligh:center;><b>Video Game Buddy</b></h1>
+<center><img src="webpage/images/Read_me_image.jpg"></center>
+<h1>
 
 
 
@@ -21,7 +22,7 @@
 
 ## Video Game Buddy
 
-Objective: 
+Objective: Have you ever played THE PERFECT game, sunk countless hours into it, only to have it end, which forces you to stare into the void of what to do with your free time now that your favorite story is over?... well we have! Videogame Buddy would like to hear about your favorite video games, and see if they can offer you some new games to play that are similar!
 
 ## Data Sources
 
