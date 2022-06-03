@@ -16,29 +16,29 @@ function handleClick() {
 
     let title = document.getElementById("gameinput").value;
 
-    let check1 = document.getElementById('checkbox1');
-    let check2 = document.getElementById('checkbox2');
-    let check3 = document.getElementById('checkbox3');
+    let checks = document.getElementsByClassName('form-select');
 
-    let checkboxes = [check1,check2,check3];
-    let checked = []
-    for (let i=0; i< checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            if(i==0) {
-                checked.push('E');
-            }
-            if(i==1) {
-                checked.push('T');
-            }
-            if(i==2) {
-                checked.push('M');
-            }
-        }
-    }
+    console.log(checks);
+
+    // let checkboxes = [check1,check2,check3];
+    // let checked = []
+    // for (let i=0; i< checkboxes.length; i++) {
+    //     if (checkboxes[i].checked) {
+    //         if(i==0) {
+    //             checked.push('E');
+    //         }
+    //         if(i==1) {
+    //             checked.push('T');
+    //         }
+    //         if(i==2) {
+    //             checked.push('M');
+    //         }
+    //     }
+    // }
 
     submission.push(platform);
     submission.push(title);
-    submission.push(checked);
+    // submission.push(checked);
 
     console.log(submission);
 
