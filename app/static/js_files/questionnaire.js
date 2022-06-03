@@ -16,29 +16,29 @@ function handleClick() {
 
     let title = document.getElementById("gameinput").value;
 
-    let checks = document.getElementsByClassName('form-select');
+    let esrb_checks = document.getElementsByClassName('esrb');
 
-    console.log(checks);
+    // console.log(checks);
 
     // let checkboxes = [check1,check2,check3];
-    // let checked = []
-    // for (let i=0; i< checkboxes.length; i++) {
-    //     if (checkboxes[i].checked) {
-    //         if(i==0) {
-    //             checked.push('E');
-    //         }
-    //         if(i==1) {
-    //             checked.push('T');
-    //         }
-    //         if(i==2) {
-    //             checked.push('M');
-    //         }
-    //     }
-    // }
+    let esrb_selections = []
+    for (let i=0; i< checks.length; i++) {
+        if (checks[i].checked) {
+            if(i==0) {
+                esrb_selections.push('E');
+            }
+            if(i==1) {
+                esrb_selections.push('T');
+            }
+            if(i==2) {
+                esrb_selections.push('M');
+            }
+        }
+    }
 
     submission.push(platform);
     submission.push(title);
-    // submission.push(checked);
+    submission.push(esrb_selections);
 
     console.log(submission);
 
