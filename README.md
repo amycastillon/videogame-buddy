@@ -16,7 +16,7 @@
 * [Placeholder4](#Placeholder4)
 * [HTML](#html)
 * [Run Flask App](#run-flask)
-* [Contacts](#contacts)git pul
+* [Contacts](#contacts)
 
 
 
