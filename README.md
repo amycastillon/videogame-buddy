@@ -1,5 +1,5 @@
 <h1 text-aligh:center;><b>Video Game Buddy</b></h1>
-<center><img src="webpage/images/Read_me_image.jpg"></center>
+<center><img src="Resources/Read me images/website/Read_me_image.jpg"></center>
 <h1>
 
 
@@ -10,7 +10,7 @@
 * [Video Game Buddy](#Video-Game-Buddy)
 * [Data Sources](#data-sources)
 * [Technologies](#technologies)
-* [Placeholder1](#Placeholder1)
+* [HTML](#HTML)
 * [Placeholder2](#Placeholder2)
 * [Placeholder3](#Placeholder3)
 * [Placeholder4](#Placeholder4)
@@ -37,12 +37,12 @@ Objective: Have you ever played THE PERFECT game, sunk countless hours into it, 
 * Plotly?
 * Jupyter Notebook
 * SQL?
+* Amazon AWS
 * 
-* 
 
 
-# Placeholder1
-
+# HTML
+<center><img src="Resources/Read me images/website.jpg"></center>
 Placeholder
 
 # PLaceholder2
@@ -59,12 +59,9 @@ Placeholder
  
 # Placeholder5
  
-Placeholder
+Problems we ran in to
+Git hub and size limits . our original data files were too large for git hub. we had to run this code: git lfs install . Eventually we were able to add the files to repo. Then we recieved and email regarding size limits. We settled with hosting the original files on an aws account and we have a link to it. We orignally had  cleaned 2 sets of data, the games and the reviews. we decided to we only needed the one data csv ( games). and we deleted the other file for space reasons.
  
-## HTML
- 
-Placeholder
-
 
 
 ## Run Flask
