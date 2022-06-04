@@ -13,9 +13,10 @@ app.static_folder = 'static'
 def home():
     return render_template('index.html')
 
-@app.route('/filter_search',methods = ['POST','GET'])
+@app.route('/filter_search', methods = ['POST','GET'])
 def search(submission):
     return jsonify(submission)
+
 @app.route('/videogame_buddy.html')
 def vgbuddy():
     return render_template('videogame_buddy.html')
@@ -32,6 +33,9 @@ def results():
 def finalresults():
     return render_template('finalresults.html')
 
+@app.route('/data.html')
+def finalresults():
+    return render_template('data.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
