@@ -1,4 +1,4 @@
-from crypt import methods
+# from crypt import methods
 import sqlite3
 from flask import Flask, jsonify, render_template
 from flask import redirect, url_for, request
@@ -27,6 +27,10 @@ def browse():
 @app.route('/results.html')
 def results():
     return render_template('results.html')
+
+@app.route('/finalresults.html')
+def results():
+    return render_template('finalresults.html')
 
 
 
