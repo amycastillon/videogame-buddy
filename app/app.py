@@ -37,15 +37,9 @@ def results():
 def finalresults():
     return render_template('finalresults.html')
 
-<<<<<<< HEAD
-# @app.route('/data.html')
-# def finalresults():
-#     return render_template('data.html')
-=======
 @app.route('/data.html')
 def data():
     return render_template('data.html')
->>>>>>> bc1bf3b569669da1323ffc4436b118e62ed23db1
 
 if __name__ == '__main__':
     app.run(debug=True)
