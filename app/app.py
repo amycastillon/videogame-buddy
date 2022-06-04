@@ -1,4 +1,4 @@
-from crypt import methods
+# from crypt import methods
 import sqlite3
 from flask import Flask, jsonify, render_template
 from flask import redirect, url_for, request
@@ -13,9 +13,10 @@ app.static_folder = 'static'
 def home():
     return render_template('index.html')
 
-@app.route('/filter_search',methods = ['POST','GET'])
+@app.route('/filter_search', methods = ['POST','GET'])
 def search(submission):
     return jsonify(submission)
+
 @app.route('/videogame_buddy.html')
 def vgbuddy():
     return render_template('videogame_buddy.html')

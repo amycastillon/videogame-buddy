@@ -52,7 +52,7 @@ function handleClick() {
         }
     };
 
-    console.log(submission);
+    // console.log(submission);
 
     fetch("/filter_search", {
         method: "POST",
