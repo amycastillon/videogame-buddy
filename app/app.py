@@ -29,6 +29,10 @@ def browse():
 def results():
     return render_template('results.html')
 
+@app.route('/finalresults.html')
+def finalresults():
+    return render_template('finalresults.html')
+
 
 
 
