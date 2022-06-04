@@ -33,8 +33,5 @@ def finalresults():
     return render_template('finalresults.html')
 
 
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
