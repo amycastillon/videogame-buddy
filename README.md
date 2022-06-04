@@ -11,10 +11,8 @@
 * [Data Sources](#data-sources)
 * [Technologies](#technologies)
 * [HTML](#HTML)
-* [Placeholder2](#Placeholder2)
-* [Placeholder3](#Placeholder3)
+* [ETL](#ETL)
 * [Placeholder4](#Placeholder4)
-* [HTML](#html)
 * [Run Flask App](#run-flask)
 * [Contacts](#contacts)
 
@@ -22,7 +20,7 @@
 
 ## Video Game Buddy
 
-Objective: Have you ever played THE PERFECT game, sunk countless hours into it, only to have it end, which forces you to stare into the void of what to do with your free time now that your favorite story is over?... well we have! Videogame Buddy would like to hear about your favorite video games, and see if they can offer you some new games to play that are similar!
+Have you ever played THE PERFECT game, sunk countless hours into it, only to have it end, which forces you to stare into the void of what to do with your free time now that your favorite story is over?... well we have! Videogame Buddy would like to hear about your favorite video games, and see if they can offer you some new games to play that are similar!
 
 ## Data Sources
 
@@ -32,24 +30,18 @@ Objective: Have you ever played THE PERFECT game, sunk countless hours into it, 
 ## Technologies
 * Python
 * Flask
-* Javascript?
+* Javascript
 * HTML/CSS
-* Plotly?
 * Jupyter Notebook
-* SQL?
 * Amazon AWS
-* 
+* Heroku
 
 
-# HTML
+## HTML
 <center><img src="Resources/Read me images/website.jpg"></center>
 Placeholder
 
-# PLaceholder2
-
-Placeholder
-
-# PLaceholder3
+## ETL
 
 Placeholder
  
