@@ -16,6 +16,21 @@ def home():
 @app.route('/filter_search',methods = ['POST','GET'])
 def search(submission):
     return jsonify(submission)
+@app.route('/videogame_buddy.html')
+def vgbuddy():
+    return render_template('videogame_buddy.html')
+
+@app.route('/browse_games.html')
+def browse():
+    return render_template('browse_games.html')
+
+@app.route('/results.html')
+def results():
+    return render_template('results.html')
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

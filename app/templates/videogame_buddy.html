@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="static/css/bootstrap.css">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 
   <style>
     body {
-      background-image: url("images/carpet_design.webp");
+      background-image: url("static/images/carpet_design.webp");
       background-size: 850px;
     }
   </style>
@@ -45,7 +45,7 @@
             <a class="nav-link" href="videogame_buddy.html">Videogame Buddy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="videogame_data.html">Browse Videogames</a>
+            <a class="nav-link" href="browse_games.html">Browse Videogames</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="background4.html">background 4</a>
@@ -70,10 +70,11 @@
           <div class="card-body">
             <h4 class="card-title">Your Videogame Preferences</h4>
             <p>Videogame Buddy works best if you ask them for a game suggestion based on one particular game you love.
-              They will find suggestions for you based on their vast knowledge of over 12,000 games! (It must be spelled correctly!)</p>
+              They will find suggestions for you based on their vast knowledge of over 12,000 games! (It must be spelled
+              correctly!)</p>
             <div class="form-input">
               <label for="comparedgame" class="form-label mt-4"><strong>What game title would you like comparable games
-                for?</strong></label>
+                  for?</strong></label>
               <input type="title" class="form-control" id="gameinput" aria-describedby="gameinput"
                 placeholder="Enter Title">
             </div><br>
@@ -105,484 +106,492 @@
             </div>
             <div class="form-group" id="plaform_checklist">
               <label for="exampleSelect1" class="form-label mt-4"><strong>What game platform(s) would you like to see
-                recommended?</strong></label>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Xbox Series X" id="checkbox4">
-                  <label class="form-check-label" for="platform1">
-                    Xbox Series X
-                  </label>
+                  recommended?</strong></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Xbox Series X" id="checkbox4">
+                    <label class="form-check-label" for="platform1">
+                      Xbox Series X
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Xbox One" id="checkbox5">
+                    <label class="form-check-label" for="platform2">
+                      Xbox One
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Xbox 360" id="checkbox6">
+                    <label class="form-check-label" for="platform3">
+                      Xbox 360
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Xbox" id="checkbox7">
+                    <label class="form-check-label" for="platform4">
+                      Xbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="WiiU" id="checkbox8">
+                    <label class="form-check-label" for="platform5">
+                      WiiU
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Wii" id="checkbox9">
+                    <label class="form-check-label" for="platform6">
+                      Wii
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Switch" id="checkbox10">
+                    <label class="form-check-label" for="platform7">
+                      Switch
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PSP" id="checkbox11">
+                    <label class="form-check-label" for="platform8">
+                      PSP
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation Vita" id="checkbox12">
+                    <label class="form-check-label" for="platform9">
+                      PlayStation Vita
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation 5" id="checkbox13">
+                    <label class="form-check-label" for="platform10">
+                      PlayStation 5
+                    </label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Xbox One" id="checkbox5">
-                  <label class="form-check-label" for="platform2">
-                    Xbox One
-                  </label>
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation 4" id="checkbox14">
+                    <label class="form-check-label" for="platform11">
+                      PlayStation 4
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation 3" id="checkbox15">
+                    <label class="form-check-label" for="platform12">
+                      PlayStation 3
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation 2" id="checkbox16">
+                    <label class="form-check-label" for="platform13">
+                      PlayStation 2
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PlayStation" id="checkbox17">
+                    <label class="form-check-label" for="platform14">
+                      PlayStation
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PC" id="checkbox18">
+                    <label class="form-check-label" for="platform15">
+                      PC
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Nintendo 64" id="checkbox19">
+                    <label class="form-check-label" for="platform16">
+                      Nintendo 64
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="GameCube" id="checkbox20">
+                    <label class="form-check-label" for="platform17">
+                      GameCube
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Game Boy Advance" id="checkbox21">
+                    <label class="form-check-label" for="platform18">
+                      Game Boy Advance
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="DS" id="checkbox22">
+                    <label class="form-check-label" for="platform19">
+                      DS
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Dreamcast" id="checkbox23">
+                    <label class="form-check-label" for="platform20">
+                      Dreamcast
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3DS" id="checkbox24">
+                    <label class="form-check-label" for="platform21">
+                      3DS
+                    </label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Xbox 360" id="checkbox6">
-                  <label class="form-check-label" for="platform3">
-                    Xbox 360
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Xbox" id="checkbox7">
-                  <label class="form-check-label" for="platform4">
-                    Xbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="WiiU" id="checkbox8">
-                  <label class="form-check-label" for="platform5">
-                    WiiU
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Wii" id="checkbox9">
-                  <label class="form-check-label" for="platform6">
-                    Wii
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Switch" id="checkbox10">
-                  <label class="form-check-label" for="platform7">
-                    Switch
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PSP" id="checkbox11">
-                  <label class="form-check-label" for="platform8">
-                    PSP
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation Vita" id="checkbox12">
-                  <label class="form-check-label" for="platform9">
-                    PlayStation Vita
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation 5" id="checkbox13">
-                  <label class="form-check-label" for="platform10">
-                    PlayStation 5
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation 4" id="checkbox14">
-                  <label class="form-check-label" for="platform11">
-                    PlayStation 4
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation 3" id="checkbox15">
-                  <label class="form-check-label" for="platform12">
-                    PlayStation 3
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation 2" id="checkbox16">
-                  <label class="form-check-label" for="platform13">
-                    PlayStation 2
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PlayStation" id="checkbox17">
-                  <label class="form-check-label" for="platform14">
-                    PlayStation
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="PC" id="checkbox18">
-                  <label class="form-check-label" for="platform15">
-                    PC
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Nintendo 64" id="checkbox19">
-                  <label class="form-check-label" for="platform16">
-                    Nintendo 64
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="GameCube" id="checkbox20">
-                  <label class="form-check-label" for="platform17">
-                    GameCube
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Game Boy Advance" id="checkbox21">
-                  <label class="form-check-label" for="platform18">
-                    Game Boy Advance
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="DS" id="checkbox22">
-                  <label class="form-check-label" for="platform19">
-                    DS
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Dreamcast" id="checkbox23">
-                  <label class="form-check-label" for="platform20">
-                    Dreamcast
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="3DS" id="checkbox24">
-                  <label class="form-check-label" for="platform21">
-                    3DS
-                  </label>
-                </div>
-            </div><br>
+              </div><br>
 
-            <p class="card-text"><em><strong>Select all boxes you are open to for this search:</em></strong></p>
-            <div class="row">
-              <div class="col-sm-6" id="genre_checklist">
-                <p>Game Type</p>
-                <!-- game type -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="2D" id="checkbox25">
-                  <label class="form-check-label" for="genre1">
-                    2D
-                  </label>
+              <p class="card-text"><em><strong>Select all boxes you are open to for this search:</em></strong></p>
+              <div class="row">
+                <div class="col-sm-6" id="genre_checklist">
+                  <p>Game Type</p>
+                  <!-- game type -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="2D" id="checkbox25">
+                    <label class="form-check-label" for="genre1">
+                      2D
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3D" id="checkbox26">
+                    <label class="form-check-label" for="genre2">
+                      3D
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Arcade" id="checkbox27">
+                    <label class="form-check-label" for="genre3">
+                      Arcade
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Board/Card Game" id="checkbox28">
+                    <label class="form-check-label" for="genre4">
+                      Board/Card Game
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Breeding/Constructing, or City Building"
+                      id="checkbox29">
+                    <label class="form-check-label" for="genre5">
+                      Breeding/Constructing, or City Building
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Dancing" id="checkbox30">
+                    <label class="form-check-label" for="genre6">
+                      Dancing
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="First-Person" id="checkbox31">
+                    <label class="form-check-label" for="genre7">
+                      First-Person
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Flight" id="checkbox32">
+                    <label class="form-check-label" for="genre8">
+                      Flight
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Gambling" id="checkbox33">
+                    <label class="form-check-label" for="genre9">
+                      Gambling
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Massively Multiplayer" id="checkbox34">
+                    <label class="form-check-label" for="genre10">
+                      Massively Multiplayer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Open-World" id="checkbox35">
+                    <label class="form-check-label" for="genre11">
+                      Open-World
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Parlor" id="checkbox36">
+                    <label class="form-check-label" for="genre12">
+                      Parlor
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Party/ Minigame/ Trivia/ Game Show"
+                      id="checkbox37">
+                    <label class="form-check-label" for="genre13">
+                      Party/ Minigame/ Trivia/ Game Show
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Platformer" id="checkbox38">
+                    <label class="form-check-label" for="genre14">
+                      Platformer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Point-and-Click" id="checkbox39">
+                    <label class="form-check-label" for="genre15">
+                      Point-and-Click
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Real-Time" id="checkbox40">
+                    <label class="form-check-label" for="genre16">
+                      Real-Time
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Role-Playing" id="checkbox41">
+                    <label class="form-check-label" for="genre17">
+                      Role-Playing
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Scrolling" id="checkbox42">
+                    <label class="form-check-label" for="genre18">
+                      Scrolling
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Shooter" id="checkbox43">
+                    <label class="form-check-label" for="genre19">
+                      Shooter
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Simulation" id="checkbox44">
+                    <label class="form-check-label" for="genre20">
+                      Simulation
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Stacking" id="checkbox45">
+                    <label class="form-check-label" for="genre21">
+                      Stacking
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Third Person" id="checkbox46">
+                    <label class="form-check-label" for="genre22">
+                      Third Person
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Team" id="checkbox47">
+                    <label class="form-check-label" for="genre23">
+                      Team
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Trainer" id="checkbox48">
+                    <label class="form-check-label" for="genre24">
+                      Trainer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Turn-Based" id="checkbox49">
+                    <label class="form-check-label" for="genre25">
+                      Turn-Based
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Virtual Life" id="checkbox50">
+                    <label class="form-check-label" for="genre26">
+                      Virtual Life
+                    </label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="3D" id="checkbox26">
-                  <label class="form-check-label" for="genre2">
-                    3D
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Arcade" id="checkbox27">
-                  <label class="form-check-label" for="genre3">
-                    Arcade
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Board/Card Game" id="checkbox28">
-                  <label class="form-check-label" for="genre4">
-                    Board/Card Game
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Breeding/Constructing, or City Building" id="checkbox29">
-                  <label class="form-check-label" for="genre5">
-                    Breeding/Constructing, or City Building
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Dancing" id="checkbox30">
-                  <label class="form-check-label" for="genre6">
-                    Dancing
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="First-Person" id="checkbox31">
-                  <label class="form-check-label" for="genre7">
-                    First-Person
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Flight" id="checkbox32">
-                  <label class="form-check-label" for="genre8">
-                    Flight
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Gambling" id="checkbox33">
-                  <label class="form-check-label" for="genre9">
-                    Gambling
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Massively Multiplayer" id="checkbox34">
-                  <label class="form-check-label" for="genre10">
-                    Massively Multiplayer
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Open-World" id="checkbox35">
-                  <label class="form-check-label" for="genre11">
-                    Open-World
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Parlor" id="checkbox36">
-                  <label class="form-check-label" for="genre12">
-                    Parlor
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Party/ Minigame/ Trivia/ Game Show" id="checkbox37">
-                  <label class="form-check-label" for="genre13">
-                    Party/ Minigame/ Trivia/ Game Show
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Platformer" id="checkbox38">
-                  <label class="form-check-label" for="genre14">
-                    Platformer
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Point-and-Click" id="checkbox39">
-                  <label class="form-check-label" for="genre15">
-                    Point-and-Click
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Real-Time" id="checkbox40">
-                  <label class="form-check-label" for="genre16">
-                    Real-Time
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Role-Playing" id="checkbox41">
-                  <label class="form-check-label" for="genre17">
-                    Role-Playing
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Scrolling" id="checkbox42">
-                  <label class="form-check-label" for="genre18">
-                    Scrolling
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Shooter" id="checkbox43">
-                  <label class="form-check-label" for="genre19">
-                    Shooter
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Simulation" id="checkbox44">
-                  <label class="form-check-label" for="genre20">
-                    Simulation
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Stacking" id="checkbox45">
-                  <label class="form-check-label" for="genre21">
-                    Stacking
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Third Person" id="checkbox46">
-                  <label class="form-check-label" for="genre22">
-                    Third Person
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Team" id="checkbox47">
-                  <label class="form-check-label" for="genre23">
-                    Team
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Trainer" id="checkbox48">
-                  <label class="form-check-label" for="genre24">
-                    Trainer
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Turn-Based" id="checkbox49">
-                  <label class="form-check-label" for="genre25">
-                    Turn-Based
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Virtual Life" id="checkbox50">
-                  <label class="form-check-label" for="genre26">
-                    Virtual Life
-                  </label>
-                </div>
-              </div>
 
 
 
-              <div class="col-sm-6">
-                <!-- game genre -->
-                <p>Genre</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Action" id="checkbox51">
-                  <label class="form-check-label" for="genre27">
-                    Action
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Adventure" id="checkbox52">
-                  <label class="form-check-label" for="genre28">
-                    Adventure
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Car Combat" id="checkbox53">
-                  <label class="form-check-label" for="genre29">
-                    Car Combat
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Card Battle" id="checkbox54">
-                  <label class="form-check-label" for="genre30">
-                    Card Battle
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Career" id="checkbox55">
-                  <label class="form-check-label" for="genre31">
-                    Career
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Driving" id="checkbox56">
-                  <label class="form-check-label" for="genre32">
-                    Driving
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Edutainment" id="checkbox57">
-                  <label class="form-check-label" for="genre33">
-                    Edutainment
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Exercise/ Fitness" id="checkbox58">
-                  <label class="form-check-label" for="genre34">
-                    Exercise/ Fitness
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Fantasy" id="checkbox59">
-                  <label class="form-check-label" for="genre35">
-                    Fantasy
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Fighting" id="checkbox60">
-                  <label class="form-check-label" for="genre36">
-                    Fighting
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Futuristic" id="checkbox61">
-                  <label class="form-check-label" for="genre37">
-                    Futuristic
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Historic" id="checkbox62">
-                  <label class="form-check-label" for="genre38">
-                    Historic
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Horror" id="checkbox63">
-                  <label class="form-check-label" for="genre39">
-                    Horror
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Logic" id="checkbox64">
-                  <label class="form-check-label" for="genre40">
-                    Logic
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Military, Strategy" id="checkbox65>
-                  <label class="form-check-label" for="genre41">
+                <div class="col-sm-6" id="genre_checklist">
+                  <!-- game genre -->
+                  <p>Genre</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Action" id="checkbox51">
+                    <label class="form-check-label" for="genre27">
+                      Action
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Adventure" id="checkbox52">
+                    <label class="form-check-label" for="genre28">
+                      Adventure
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Car Combat" id="checkbox53">
+                    <label class="form-check-label" for="genre29">
+                      Car Combat
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Card Battle" id="checkbox54">
+                    <label class="form-check-label" for="genre30">
+                      Card Battle
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Career" id="checkbox55">
+                    <label class="form-check-label" for="genre31">
+                      Career
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Driving" id="checkbox56">
+                    <label class="form-check-label" for="genre32">
+                      Driving
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Edutainment" id="checkbox57">
+                    <label class="form-check-label" for="genre33">
+                      Edutainment
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Exercise/ Fitness" id="checkbox58">
+                    <label class="form-check-label" for="genre34">
+                      Exercise/ Fitness
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Fantasy" id="checkbox59">
+                    <label class="form-check-label" for="genre35">
+                      Fantasy
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Fighting" id="checkbox60">
+                    <label class="form-check-label" for="genre36">
+                      Fighting
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Futuristic" id="checkbox61">
+                    <label class="form-check-label" for="genre37">
+                      Futuristic
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Historic" id="checkbox62">
+                    <label class="form-check-label" for="genre38">
+                      Historic
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Horror" id="checkbox63">
+                    <label class="form-check-label" for="genre39">
+                      Horror
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Logic" id="checkbox64">
+                    <label class="form-check-label" for="genre40">
+                      Logic
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Military, Strategy" id="checkbox65>
+                  <label class=" form-check-label" for="genre41">
                     Military, Strategy
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Miscellaneous, Compilation*(recommended)" id="checkbox66">
-                  <label class="form-check-label" for="genre42">
-                    Miscellaneous, Compilation*(recommended)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Music, Rhythm, Music Maker" id="checkbox67">
-                  <label class="form-check-label" for="genre43">
-                    Music, Rhythm, Music Maker
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Puzzle" id="checkbox68">
-                  <label class="form-check-label" for="genre44">
-                    Puzzle
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Racing" id="checkbox69">
-                  <label class="form-check-label" for="genre45">
-                    Racing
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Sci-Fi" id="checkbox70">
-                  <label class="form-check-label" for="genre46">
-                    Sci-Fi
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Space" id="checkbox71">
-                  <label class="form-check-label" for="genre47">
-                    Space
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Sports" id="checkbox72">
-                  <label class="form-check-label" for="genre48">
-                    Sports
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Strategy" id="checkbox73">
-                  <label class="form-check-label" for="genre49">
-                    Strategy
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Survival" id="checkbox74">
-                  <label class="form-check-label" for="genre50">
-                    Survival
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Tactics, Tactical" id="checkbox75">
-                  <label class="form-check-label" for="genre51">
-                    Tactics, Tactical
-                  </label>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Miscellaneous, Compilation*(recommended)"
+                      id="checkbox66">
+                    <label class="form-check-label" for="genre42">
+                      Miscellaneous, Compilation*(recommended)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Music, Rhythm, Music Maker" id="checkbox67">
+                    <label class="form-check-label" for="genre43">
+                      Music, Rhythm, Music Maker
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Puzzle" id="checkbox68">
+                    <label class="form-check-label" for="genre44">
+                      Puzzle
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Racing" id="checkbox69">
+                    <label class="form-check-label" for="genre45">
+                      Racing
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Sci-Fi" id="checkbox70">
+                    <label class="form-check-label" for="genre46">
+                      Sci-Fi
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Space" id="checkbox71">
+                    <label class="form-check-label" for="genre47">
+                      Space
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Sports" id="checkbox72">
+                    <label class="form-check-label" for="genre48">
+                      Sports
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Strategy" id="checkbox73">
+                    <label class="form-check-label" for="genre49">
+                      Strategy
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Survival" id="checkbox74">
+                    <label class="form-check-label" for="genre50">
+                      Survival
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Tactics, Tactical" id="checkbox75">
+                    <label class="form-check-label" for="genre51">
+                      Tactics, Tactical
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- sports should include bowling, biking, skating, skate / skateboard,skateboarding, skiing, ski / snowboard, wakeboarding, surf / wakeboard, 
+              <!-- sports should include bowling, biking, skating, skate / skateboard,skateboarding, skiing, ski / snowboard, wakeboarding, surf / wakeboard, 
   surfing, fishing, hunting, athletics, boxing / martial arts, wrestling, golf, tennis, billiards, olympic sports, soccer, football, baseball, basketball,
   cricket, ice hockey, rugby, management, boxing, volleyball,  -->
 
-            <!-- general, miscellaneous, traditional,  -->
+              <!-- general, miscellaneous, traditional,  -->
 
-            <!-- military, command, combat, government, defense, wargame, 4x, artillery, tycoon, business / tycoon, management, -->
+              <!-- military, command, combat, government, defense, wargame, 4x, artillery, tycoon, business / tycoon, management, -->
 
 
-            <br>
-            <input id="submit_button" value="Submit" type="button" class="btn btn-primary btn-lg">
-            </form>
+              <br>
+              <input id="submit_button" value="Submit" type="button" class="btn btn-primary btn-lg">
+              </form>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
-  </div>
 
 
 
 
 
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
   <script src="../static/js_files/questionnaire.js"></script>
 
