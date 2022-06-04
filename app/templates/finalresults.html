@@ -17,6 +17,11 @@
             background-image: url("static/images/controller_wallpaper.jpg");
             background-size: auto;
         }
+
+        .navbar-custom {
+            background-color: rgb(176, 14, 212);
+         }
+
     </style>
 
 
@@ -25,7 +30,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> Home </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -47,7 +52,9 @@
                         <a class="nav-link" href="browse_games.html">Browse Videogames</a>
                     </li>
                 </ul>
-
+                <form class="nav-item d-flex">
+                    <a class="nav-link" href="data.html">Data</a>
+                    </li>
             </div>
         </div>
     </nav>
@@ -60,9 +67,27 @@
         <div class="col-lg-7">
 
             <div class="container-fluid border-primary" style="padding-left:30px; padding-right:30px">
-                <div class="card border-info mb-3" style="min-width:300px">
+                <div class="card border-success mb-3" style="min-width:300px">
                     <div class="card-header">Your Results Will Appear Here!</div>
                     <div class="card-body">
+                        <p>Videogame Buddy thinks you will enjoy these games!</p>
+                        <ul>
+                            <li>
+                                {{final_result1}}
+                            </li>
+                            <li>
+                                {{final_result2}}
+                            </li>
+                            <li>
+                                {{final_result3}}
+                            </li>
+                            <li>
+                                {{final_result4}}
+                            </li>
+                            <li>
+                                {{final_result5}}
+                            </li>
+                        </ul>
                         
 
                     </div>
