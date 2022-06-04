@@ -7,7 +7,7 @@ function handleClick() {
 
     let submission = {};
 
-    let title = document.getElementById("gameinput").value;
+    let title = [document.getElementById("gameinput").value];
     console.log(title);
     submission.title = title;
 
@@ -53,11 +53,24 @@ function handleClick() {
     };
 
     // console.log(submission);
-    fetch("/api/filter_search",)
+    fetch("/api/filter_search", {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(submission),
+    })
     .then(response => response.json())
-    .then(function (game_suggestion) {
-        console.log(game_suggestion)
+    .then(function (game_suggestions) {
+        console.log(game_suggestions)
     });
+
+    
 }
+
+
+
+
 
 button.on("click", handleClick);

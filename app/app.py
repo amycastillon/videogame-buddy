@@ -1,9 +1,10 @@
 # from crypt import methods
 import sqlite3
-from flask import Flask, jsonify, render_template
-from flask import redirect, url_for, request
+from flask import *
 import os
 import sqlite3
+import pandas as pd
+from re import search
 
 
 app = Flask(__name__)
@@ -17,9 +18,20 @@ def home():
 def index():
     return render_template('index.html')
 
-@app.route('/api/filter_search')
+@app.route('/api/filter_search', methods = ['POST'])
 def search():
-    return jsonify('hello')
+    search = request.get_json()
+    # df = pd.read_json('static\json_files\full_json.json')
+
+    for category in search:
+        print(category)
+        for term in search[f'{category}']:
+            term = term.strip()
+            print(term)
+
+
+
+    return jsonify(search)
 
 @app.route('/videogame_buddy.html')
 def vgbuddy():
