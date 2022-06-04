@@ -53,22 +53,11 @@ function handleClick() {
     };
 
     // console.log(submission);
-
-    fetch("/filter_search", {
-        method: "POST",
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(submission)
-    })
+    fetch("/api/filter_search",)
     .then(response => response.json())
-    .then(submission => {
-        console.log('Sucess',data);
-    })
     .then(function (game_suggestion) {
         console.log(game_suggestion)
-    })
-    .catch((error) => {
-        console.error('Error',error)
-    })
+    });
 }
 
 button.on("click", handleClick);
