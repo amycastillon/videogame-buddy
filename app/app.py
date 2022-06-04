@@ -37,6 +37,9 @@ def results():
 def finalresults():
     return render_template('finalresults.html')
 
+@app.route('/data.html')
+def finalresults():
+    return render_template('data.html')
 
 
 
