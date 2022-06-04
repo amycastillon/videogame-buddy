@@ -1,5 +1,5 @@
 <h1 text-aligh:center;><b>Video Game Buddy</b></h1>
-<center><img src="Resources/Read me images/website/Read_me_image.jpg"></center>
+<center><img src="Resources/Read me images/Read_me_image.jpg"></center>
 <h1>
 
 
@@ -57,13 +57,7 @@ Placeholder
  
 Placeholder
  
-# Placeholder5
  
-Problems we ran in to
-Git hub and size limits . our original data files were too large for git hub. we had to run this code: git lfs install . Eventually we were able to add the files to repo. Then we recieved and email regarding size limits. We settled with hosting the original files on an aws account and we have a link to it. We orignally had  cleaned 2 sets of data, the games and the reviews. we decided to we only needed the one data csv ( games). and we deleted the other file for space reasons.
- 
-
-
 ## Run Flask
 
 Placeholder
