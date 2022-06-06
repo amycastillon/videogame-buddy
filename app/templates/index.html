@@ -15,12 +15,37 @@
   <style>
     body {
       background-image: url("static/images/arcade.jpg");
+      background-size: 1600px;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+    .neonText {
+      text-shadow:
+        0 0 7px black,
+        0 0 10px black,
+        0 0 21px black,
+        0 0 42px black,
+        0 0 82px black,
+        0 0 92px black,
+        0 0 102px black,
+        0 0 151px black;
+    }
+
+    .neonTexth2 {
+      text-shadow:
+        0 0 7px magenta,
+        0 0 10px magenta,
+        0 0 21px magenta,
+        0 0 42px magenta,
+        0 0 82px magenta,
+        0 0 92px magenta,
+        0 0 102px magenta,
+        0 0 151px magenta;
     }
 
     .navbar-custom {
       background-color: rgb(176, 14, 212);
     }
-
   </style>
 
 
@@ -58,7 +83,7 @@
       </div>
     </div>
   </nav>
-<!-- 
+  <!-- 
   <div class="alert alert-dismissible alert-info">
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     <strong>Welcome to Videogame Buddy!</strong> Have you ever found THE PERFECT game and played it into oblivion, 
@@ -67,27 +92,35 @@
     can offer you some new games to play that are similar!
   </div> -->
   <br>
-  <br>
+
   <div class="container-sm greeting">
     <br>
     <div class="row justify-content-md-center">
-      <!-- <div class="col-sm-2"></div> -->
-      <div class="col-lg-6 text-center" style="color:aliceblue; opacity:100%">
-        <h2>Welcome to the <br> Videogame Buddy Arcade!</h2>
-        <p>Have you ever played THE PERFECT game, sunk countless hours into it, only to have it end, which
-          forces you to stare into the void of what to do with your free time now that your favorite
-          story is over?... well we have!
-          Videogame Buddy would like to hear about your favorite video games, and see if they
-          can offer you some new games to play that are similar!</p>
-        <br>
-        <div class="d-grid gap-2">
-          <button class="btn btn-lg btn-dark btn-outline-primary" type="button"><a class="nav-link" href="videogame_buddy.html">Enter the Arcade</a></button>
-        </div>
-
+      <div class="row text-center">
+        <h1 class="neonTexth2"
+          style="color:rgb(255, 125, 255); font-size:48px; font-family:'Courier New', Courier, monospace">
+          Welcome to the Videogame Buddy Arcade!</h1>
+        <!-- <div class="col-sm-2"></div> -->
       </div>
-    
+      <div class="col-lg-7 text-center">
+        <!-- <div class="jumbotron" style="border-radius: 20px; background-color:aliceblue; opacity:75%; color:blueviolet"> -->
+
+        <p class="neonText"
+          style="color:white; font-size:18px; padding:30px;font-family:'Courier New', Courier, monospace">
+          <strong>Videogame Buddy would like to talk to you about your favorite game!  Enter the arcade to enter 
+            your preferences, and type in a game you would like to use to train VGBuddy!!
+          </strong>
+        </p>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-lg btn-dark btn-outline-primary" type="button"><a class="nav-link"
+              href="videogame_buddy.html">Enter the Arcade</a></button>
+        </div>
+      </div>
     </div>
-    <br><br>
+
+  </div>
+  <br><br>
   </div>
 
 
