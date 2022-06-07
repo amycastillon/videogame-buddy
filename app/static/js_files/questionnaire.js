@@ -3,6 +3,8 @@ var button = d3.select("#submit_button");
 
 
 function handleClick() {
+    localStorage.clear();
+
     console.log("A button was clicked!");
 
     let submission = {};
@@ -15,13 +17,13 @@ function handleClick() {
 
     let esrb_labels = document.getElementsByClassName("esrb_label");
 
-    submission.esrb = [];
+    submission.esrb_rating = [];
 
     for(let i = 0; i < esrb_checks.length; i++) {
         if(esrb_checks[i].checked) {
             let esrb_rating = esrb_labels[i].textContent;
             console.log(esrb_rating);
-            submission.esrb.push(esrb_rating);
+            submission.esrb_rating.push(esrb_rating);
         }
     };
 
@@ -29,13 +31,13 @@ function handleClick() {
 
     let platform_labels = document.getElementById("plaform_checklist").getElementsByClassName("form-check-label")
 
-    submission.platform = [];
+    submission.platforms = [];
 
     for(let i = 0; i < platform_checks.length; i++) {
         if(platform_checks[i].checked) {
             game_platform = platform_labels[i].textContent;
             console.log(game_platform);
-            submission.platform.push(game_platform);
+            submission.platforms.push(game_platform);
         }
     };
 
@@ -53,7 +55,7 @@ function handleClick() {
     };
 
     // console.log(submission);
-    fetch("/api/filter_search", {
+    fetch('/thirtyGames', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -63,9 +65,16 @@ function handleClick() {
     })
     .then(response => response.json())
     .then(function (game_suggestions) {
-        console.log(game_suggestions)
-    });
+        console.log(game_suggestions);
+        window.localStorage.setItem("gameSuggestions",JSON.stringify(game_suggestions));
+    })
+    .then(function () {
+        window.location.href = 'http://127.0.0.1:5000/results.html'
+    })
 
+    // document.addEventListener('storage', event => {
+    
+    // })
     
 }
 
