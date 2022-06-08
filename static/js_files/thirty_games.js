@@ -25,6 +25,7 @@ window.onload = (event) => {
 
 function handleClick() {
     console.log('click was made')
+    document.getElementById('loading').style.display = 'block';
     let checks = document.getElementsByClassName("form-check-input");
     let check_labels = document.getElementsByClassName("form-check-label");
 
