@@ -12,7 +12,7 @@
 * [Technologies](#technologies)
 * [HTML](#HTML)
 * [ETL](#ETL)
-* [Placeholder4](#Placeholder4)
+* [Heroku](#Heroku)
 * [Run Flask App](#run-flask)
 * [Contacts](#contacts)
 
@@ -43,9 +43,17 @@ Placeholder
 
 ## ETL
 
-Placeholder
+Extract
+We found our data source via Kaggle.com. - [Game Data](https://www.kaggle.com/datasets/trentenberam/metacritic-games-all-time?select=metacritic_games_master.csv)
+We used Jupyter Notebook to organize our data via Python/pandas. We dropped unncessary columns and renamed some to make better sense. 
+
+Transform
+
+Load
+We built our website. incorporated a Flask app. We used Javascript and JSOn. Build Leaflet maps; populate marker descriptions using JavaScript via the JSON API call
+
  
-# PLaceholder4
+# Heroku
  
 Placeholder
  
