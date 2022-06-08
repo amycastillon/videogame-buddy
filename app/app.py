@@ -76,5 +76,9 @@ def finalresults():
 def data():
     return render_template('data.html')
 
+@app.route('/trainAI')
+def train():
+    return('placeholder')
+
 if __name__ == '__main__':
     app.run(debug=True)
