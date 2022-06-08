@@ -159,9 +159,14 @@ def train():
     # print(predict_result.shape)
     return jsonify(recommended_games)
 
-@app.route('/gameSearch')
+@app.route('/gameSearch', methods = ['POST'])
 def search():
-    return jsonify('temp')
+    input = request.get_json()
+    df = pd.read_json(r'static\json_files\full_json.json').dropna().drop_duplicates(subset='title')
+
+    search_result = df.loc[df['title'].str.contains(f"{input}", case=False)]
+
+    return (search_result.to_html())
 
 if __name__ == '__main__':
     app.run(debug=False)
