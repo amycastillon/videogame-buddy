@@ -1,16 +1,16 @@
 // console.log('the page loaded...')
-var button = d3.select("#submit_button");
+var button = d3.select("#submit_button")
 
 // window.onstorage = () => {
 //     console.log('storage updated!')
 //     console.log(JSON.parse(window.localStorage.getItem('gameSuggestions')))
 // }
 
-suggestions = JSON.parse(window.localStorage.getItem('gameSuggestions'));
+suggestions = JSON.parse(window.localStorage.getItem('gameSuggestions'))
 
 // console.log(suggestions);
 
-box_labels = document.getElementsByClassName("form-check-label");
+box_labels = document.getElementsByClassName("form-check-label")
 
 
 window.onload = (event) => {
@@ -31,23 +31,23 @@ function handleClick() {
     games = {
         "name": [],
         "status": []
-    };
+    }
 
     for(let i = 0; i < checks.length; i++) {
         if(checks[i].checked) {
             // console.log(liked_games);
-            games.name.push(check_labels[i].textContent);
-            games.status.push(1);
+            games.name.push(check_labels[i].textContent)
+            games.status.push(1)
             console.log(games.name[i])
         }
         else if(checks[i].checked == False) {
-            games.name.push(check_labels[i].textContent);
-            games.status.push(0);
+            games.name.push(check_labels[i].textContent)
+            games.status.push(0)
             console.log(games.name[i])
         }
-    };
+    }
 
-    console.log(games);
+    console.log(games)
 
 
     // fetch('/trainAI', {
@@ -67,10 +67,10 @@ function handleClick() {
     //     window.location.href = 'http://127.0.0.1:5000/results.html'
     // })
 
-};
+}
 
-console.log('click when ready');
-button.on("click", handleClick);
+console.log('click when ready')
+button.on("click", handleClick)
 
 
 
