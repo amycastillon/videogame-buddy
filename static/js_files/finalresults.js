@@ -12,3 +12,27 @@ window.onload = (event) => {
         // console.log(box_labels[i])
     }
 }
+
+
+$('.game_link').on('click', function(event) {
+    clickedGame = event.target.innerHTML;
+    console.log(clickedGame)
+    window.location.href = 'http://127.0.0.1:5000/index.html'
+
+    // fetch('/gameSearch', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Accept': 'application/json',
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(clickedGame),
+    // })
+    // .then(response => response.json())
+    // .then(function (search_result) {
+    //     console.log(search_result);
+    //     window.localStorage.setItem("gameSuggestions",JSON.stringify(search_result));
+    // })
+    // .then(function () {
+    //     window.location.href = 'http://127.0.0.1:5000/results.html'
+    // })
+})

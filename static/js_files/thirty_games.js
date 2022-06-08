@@ -1,6 +1,8 @@
 // console.log('the page loaded...')
 var button = d3.select("#submit_button")
 
+let clickCount = 0;
+
 // window.onstorage = () => {
 //     console.log('storage updated!')
 //     console.log(JSON.parse(window.localStorage.getItem('gameSuggestions')))
@@ -24,8 +26,9 @@ window.onload = (event) => {
 
 
 function handleClick() {
+    localStorage.clear();
     console.log('click was made')
-    document.getElementById('loading').style.display = 'block';
+    
     let checks = document.getElementsByClassName("form-check-input");
     let check_labels = document.getElementsByClassName("form-check-label");
 
@@ -36,10 +39,9 @@ function handleClick() {
 
     for(let i = 0; i < checks.length; i++) {
         if(checks[i].checked) {
-            // console.log(liked_games);
             games.name.push(check_labels[i].textContent)
             games.status.push(1)
-            // console.log(games.name[i])
+            clickCount++           
         }
         else {
             games.name.push(check_labels[i].textContent)
@@ -49,7 +51,11 @@ function handleClick() {
     }
 
     console.log(games)
-
+    console.log(games.length)
+    if(clickCount<2) {
+        return
+    }
+    document.getElementById('loading').style.display = 'block';
 
     fetch('/trainAI', {
         method: 'POST',

@@ -26,7 +26,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/thirtyGames', methods = ['POST'])
-def search():    
+def thirtyGames():    
     search = request.get_json()
     df = pd.read_json(r'static\json_files\full_json.json').dropna().drop_duplicates()   
 
@@ -49,15 +49,6 @@ def search():
     data = complete_df.sample(n=30)['title'].to_list()
 
     return jsonify(data)
-
-    ####################################################################
-
-    # method 2
-    # data = {
-    #     "games": complete_df.sample(n=30)['title'].to_list()
-    #     }
-
-    # return render_template('results.html', data=data)
 
 
 @app.route('/videogame_buddy.html')
@@ -167,7 +158,10 @@ def train():
     # print(predict_result)
     # print(predict_result.shape)
     return jsonify(recommended_games)
-    
+
+@app.route('/gameSearch')
+def search():
+    return jsonify('temp')
 
 if __name__ == '__main__':
     app.run(debug=False)
