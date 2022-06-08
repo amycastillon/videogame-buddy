@@ -38,38 +38,38 @@ function handleClick() {
             // console.log(liked_games);
             games.name.push(check_labels[i].textContent)
             games.status.push(1)
-            console.log(games.name[i])
+            // console.log(games.name[i])
         }
-        else if(checks[i].checked == False) {
+        else {
             games.name.push(check_labels[i].textContent)
             games.status.push(0)
-            console.log(games.name[i])
+            // console.log(games.name[i])
         }
     }
 
     console.log(games)
 
 
-    // fetch('/trainAI', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Accept': 'application/json',
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(submission),
-    // })
-    // .then(response => response.json())
-    // .then(function (game_suggestions) {
-    //     console.log(game_suggestions);
-    //     window.localStorage.setItem("gameSuggestions",JSON.stringify(game_suggestions));
-    // })
-    // .then(function () {
-    //     window.location.href = 'http://127.0.0.1:5000/results.html'
-    // })
+    fetch('/trainAI', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(games),
+    })
+    .then(response => response.json())
+    .then(function (gameRecommendations) {
+        console.log(gameRecommendations);
+        window.localStorage.setItem("gameRecommendations",JSON.stringify(gameRecommendations));
+    })
+    .then(function () {
+        window.location.href = 'http://127.0.0.1:5000/finalresults.html'
+    })
 
 }
 
-console.log('click when ready')
+// console.log('click when ready')
 button.on("click", handleClick)
 
 
