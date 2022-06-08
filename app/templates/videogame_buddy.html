@@ -84,12 +84,18 @@
               <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
               <div class="invalid-feedback">Sorry, you may have misspelled that.</div>
             </div> -->
-            <p class="card-text"><em><strong>What ESRB rating(s) would you like to see recommended?</em></strong></p>
+            <p class="card-text"><em><strong>What ESRB rating(s) would you like to see recommended? (leave blank for no preference)</em></strong></p>
 
             <div class="form-check">
               <input class="form-check-input esrb_checkbox" type="checkbox" value="E" id="checkbox1">
               <label class="form-check-label esrb_label" for="esrb1">
                 E (Everyone)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input esrb_checkbox" type="checkbox" value="E10+" id="checkbox1a">
+              <label class="form-check-label esrb_label" for="esrb1b">
+                E10+
               </label>
             </div>
             <div class="form-check">
@@ -241,7 +247,7 @@
               </div><br>
             </div>
 
-              <p class="card-text"><em><strong>Select all boxes you are open to for this search:</em></strong></p>
+              <p class="card-text"><em><strong>Check boxes to put specific limits on your results:</em></strong></p>
               <div class="row">
                 <div class="col-sm-6" id="genre_checklist">
                   <p>Game Type</p>
@@ -515,7 +521,7 @@
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="Miscellaneous, Compilation*(recommended)"
-                      id="checkbox66">
+                      id="checkbox66" checked>
                     <label class="form-check-label" for="genre42">
                       Miscellaneous, Compilation* (recommended)
                     </label>
