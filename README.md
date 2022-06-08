@@ -50,7 +50,7 @@ We used Jupyter Notebook to organize our data via Python/pandas. We dropped unnc
 Transform
 
 Load
-We built our website. incorporated a Flask app. We used Javascript and JSOn. Build Leaflet maps; populate marker descriptions using JavaScript via the JSON API call
+We built our website. incorporated a Flask app. We used Javascript and JSOn. 
 
  
 # Heroku
