@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link href='https://fonts.googleapis.com/css?family=DM Mono' rel='stylesheet'>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     body {
       background-image: url("static/images/carpet_design.webp");
       background-size: 850px;
+      font-family: 'DM Mono';
     }
   </style>
 
@@ -71,8 +73,8 @@
               They will find suggestions for you based on their vast knowledge of over 12,000 games! (It must be spelled
               correctly!)</p>
             <div class="form-input">
-              <label for="comparedgame" class="form-label mt-4"><strong>What game title would you like comparable games
-                  for?</strong></label>
+              <label for="comparedgame" class="form-label mt-4"><em><strong>What game title would you like comparable games
+                  for?</em></strong></label>
               <input type="title" class="form-control" id="gameinput" aria-describedby="gameinput"
                 placeholder="Enter Title">
             </div><br>
@@ -82,7 +84,7 @@
               <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
               <div class="invalid-feedback">Sorry, you may have misspelled that.</div>
             </div> -->
-            <p class="card-text"><strong>What ESRB rating(s) would you like to see recommended?</strong></p>
+            <p class="card-text"><em><strong>What ESRB rating(s) would you like to see recommended?</em></strong></p>
 
             <div class="form-check">
               <input class="form-check-input esrb_checkbox" type="checkbox" value="E" id="checkbox1">
@@ -103,8 +105,8 @@
               </label>
             </div>
             <div class="form-group" id="plaform_checklist">
-              <label for="exampleSelect1" class="form-label mt-4"><strong>What game platform(s) would you like to see
-                  recommended?</strong></label>
+              <label for="exampleSelect1" class="form-label mt-4"><em><strong>What game platform(s) would you like to see
+                  recommended?</em></strong></label>
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-check">

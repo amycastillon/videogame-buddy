@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Mono' rel='stylesheet'>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +17,36 @@
         body {
             background-image: url("static/images/controller_wallpaper.jpg");
             background-size: auto;
+            font-family: 'DM Mono';
+        }
+
+        .neonTexth3 {
+            text-shadow:
+                0 0 7px rgb(255, 20, 27),
+                0 0 10px rgb(255, 20, 27),
+                0 0 21px rgb(255, 20, 27),
+                0 0 42px rgb(255, 20, 27),
+                0 0 82px rgb(255, 20, 27),
+                0 0 92px rgb(255, 20, 27),
+                0 0 102px rgb(255, 20, 27),
+                0 0 151px rgb(255, 20, 27);
+        }
+
+        .neonTexth2 {
+            text-shadow:
+                0 0 7px rgb(0, 255, 72),
+                0 0 10px rgb(0, 255, 72),
+                0 0 21px rgb(0, 255, 72),
+                0 0 42px rgb(0, 255, 72),
+                0 0 82px rgb(0, 255, 72),
+                0 0 92px rgb(0, 255, 72),
+                0 0 102px rgb(0, 255, 72),
+                0 0 151px rgb(0, 255, 72);
         }
 
         .navbar-custom {
             background-color: rgb(176, 14, 212);
-         }
-
+        }
     </style>
 
 
@@ -65,7 +90,12 @@
     <div class="row justify-content-md-center">
         <!-- <img src="images/nintendo2.svg" style="max-width:300px"> -->
         <div class="col-lg-7">
-
+            <div class="row text-center">
+                <h1 class="neonTexth2"
+                  style="color:rgb(125, 255, 136); font-size:48px; font-family:'Courier New', Courier, monospace">
+                  Game On!</h1>
+        
+              </div>
             <div class="container-fluid border-primary" style="padding-left:30px; padding-right:30px">
                 <div class="card border-success mb-3" style="min-width:300px">
                     <div class="card-header">Your Results Will Appear Here!</div>
@@ -88,10 +118,16 @@
                                 {{final_result5}}
                             </li>
                         </ul>
-                        
-
                     </div>
                 </div>
+                        <div class="row text-center">
+                            <h1 class="neonTexth3"
+                              style="color:rgb(249, 90, 90); font-size:48px; font-family:'Courier New', Courier, monospace">
+                              K.O.!!</h1>
+                    
+                          </div>
+
+
             </div>
         </div>
     </div>
