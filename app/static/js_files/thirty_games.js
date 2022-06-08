@@ -69,8 +69,12 @@ function handleClick() {
 
 };
 
-
+console.log('click when ready');
 button.on("click", handleClick);
+
+
+
+
 
 
 
