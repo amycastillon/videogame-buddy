@@ -1,4 +1,4 @@
-<h1 text-aligh:center;><b>Video Game Buddy</b></h1>
+ <h1 text-align:center;><b>Video Game Buddy</b></h1>
 <center><img src="Resources/Read me images/Read_me_image.jpg"></center>
 <h1>
 
@@ -22,9 +22,12 @@
 
 Have you ever played THE PERFECT game, sunk countless hours into it, only to have it end, which forces you to stare into the void of what to do with your free time now that your favorite story is over?... well we have! Videogame Buddy would like to hear about your favorite video games, and see if they can offer you some new games to play that are similar!
 
-## Data Sources
 
-- [Game Data](https://www.kaggle.com/datasets/trentenberam/metacritic-games-all-time?select=metacritic_games_master.csv)
+
+## Data Sources
+We found our data source via Kaggle.com. - [Game Data](https://www.kaggle.com/datasets/trentenberam/metacritic-games-all-time?select=metacritic_games_master.csv)-
+We used Jupyter Notebook to organize our data via Python/pandas. We dropped unncessary columns and renamed some to make better sense. We also utilized Amazon AWS by storing some of our larger files in an RDS bucket. 
+
 
 
 ## Technologies
@@ -35,32 +38,25 @@ Have you ever played THE PERFECT game, sunk countless hours into it, only to hav
 * Jupyter Notebook
 * Amazon AWS
 * Heroku
+* JSON
 
 
 ## HTML
 <center><img src="Resources/Read me images/website.jpg"></center>
-Placeholder
+We utiized bootstrap to design our website. On our website you will find a questionaire to fill out to allow Video Game Buddy to suggest games you might enjoy. 
 
-## ETL
+## Machine Learning
+we loaded our data in to a machine learning .. to train and test a model to predict game suggestions based on the questionare answers. 
 
-Extract
-We found our data source via Kaggle.com. - [Game Data](https://www.kaggle.com/datasets/trentenberam/metacritic-games-all-time?select=metacritic_games_master.csv)
-We used Jupyter Notebook to organize our data via Python/pandas. We dropped unncessary columns and renamed some to make better sense. 
+## Flask
+We used flask to pull the suggestions from our data to the questionaire. 
 
-Transform
 
-Load
-We built our website. incorporated a Flask app. We used Javascript and JSOn. 
-
- 
 # Heroku
- 
-Placeholder
- 
- 
-## Run Flask
+We deployed our website on to Heroku, where it was fully functional. 
 
-Placeholder
+## Run Flask App
+
 
 ## Contacts
 
