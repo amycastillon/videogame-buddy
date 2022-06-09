@@ -1,6 +1,8 @@
 // console.log('the page loaded...')
 var button = d3.select("#submit_button")
 
+let clickCount = 0;
+
 // window.onstorage = () => {
 //     console.log('storage updated!')
 //     console.log(JSON.parse(window.localStorage.getItem('gameSuggestions')))
@@ -24,7 +26,9 @@ window.onload = (event) => {
 
 
 function handleClick() {
+    localStorage.clear();
     console.log('click was made')
+    
     let checks = document.getElementsByClassName("form-check-input");
     let check_labels = document.getElementsByClassName("form-check-label");
 
@@ -35,41 +39,44 @@ function handleClick() {
 
     for(let i = 0; i < checks.length; i++) {
         if(checks[i].checked) {
-            // console.log(liked_games);
             games.name.push(check_labels[i].textContent)
             games.status.push(1)
-            console.log(games.name[i])
+            clickCount++           
         }
-        else if(checks[i].checked == False) {
+        else {
             games.name.push(check_labels[i].textContent)
             games.status.push(0)
-            console.log(games.name[i])
+            // console.log(games.name[i])
         }
     }
 
     console.log(games)
+    console.log(games.length)
+    if(clickCount<2) {
+        return
+    }
+    document.getElementById('loading').style.display = 'block';
 
-
-    // fetch('/trainAI', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Accept': 'application/json',
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(submission),
-    // })
-    // .then(response => response.json())
-    // .then(function (game_suggestions) {
-    //     console.log(game_suggestions);
-    //     window.localStorage.setItem("gameSuggestions",JSON.stringify(game_suggestions));
-    // })
-    // .then(function () {
-    //     window.location.href = 'http://127.0.0.1:5000/results.html'
-    // })
+    fetch('/trainAI', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(games),
+    })
+    .then(response => response.json())
+    .then(function (gameRecommendations) {
+        console.log(gameRecommendations);
+        window.localStorage.setItem("gameRecommendations",JSON.stringify(gameRecommendations));
+    })
+    .then(function () {
+        window.location.href = 'http://127.0.0.1:5000/finalresults.html'
+    })
 
 }
 
-console.log('click when ready')
+// console.log('click when ready')
 button.on("click", handleClick)
 
 

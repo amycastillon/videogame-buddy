@@ -9,10 +9,6 @@ function handleClick() {
 
     let submission = {};
 
-    let title = [document.getElementById("gameinput").value];
-    console.log(title);
-    submission.title = title;
-
     let esrb_checks = document.getElementsByClassName("esrb_checkbox");
 
     let esrb_labels = document.getElementsByClassName("esrb_label");
@@ -40,6 +36,10 @@ function handleClick() {
             submission.platforms.push(game_platform);
         }
     };
+
+    let title = [document.getElementById("gameinput").value];
+    console.log(title);
+    submission.title = title;
 
     let genre_checks = document.getElementById("genre_checklist").getElementsByClassName("form-check-input")
     let genre_labels = document.getElementById("genre_checklist").getElementsByClassName("form-check-label")
@@ -71,10 +71,6 @@ function handleClick() {
     .then(function () {
         window.location.href = 'http://127.0.0.1:5000/results.html'
     })
-
-    // document.addEventListener('storage', event => {
-    
-    // })
     
 };
 

@@ -28,6 +28,9 @@
 </head>
 
 <body>
+    <div style="display: none;" id="loading">
+        <img id="loading-image" src="static/images/loading_gif.gif"/>
+    </div>
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <div class="container-fluid">
@@ -69,7 +72,7 @@
                 <div class="card border-info mb-3" style="min-width:300px">
                     <div class="card-header">Part 2: Tell Videogame Buddy if they're on the right track</div>
                     <div class="card-body">
-                        <h4 class="card-title">Do you like any of these? Please check the ones you do:</h4>
+                        <h4 class="card-title">Do you like any of these? Please make at least 2 choices:</h4>
                         <p class="card-text"></p>
                         <div class="form-check">
                             <input class="form-check-input result_checkbox" type="checkbox" value="{{result1}}" id="checkbox1">
@@ -252,7 +255,7 @@
                             </label>
                         </div>
 
-                        <a class="finalresults_link" href="finalresults.html">
+                        <!-- <a class="finalresults_link" href="finalresults.html"> -->
                             <input id="submit_button" value="Submit" type="button" class="btn btn-primary btn-lg"></a>
                         </form>
 
