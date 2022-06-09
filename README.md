@@ -11,7 +11,6 @@
 * [Data Sources](#data-sources)
 * [Technologies](#technologies)
 * [HTML](#HTML)
-* [ETL](#ETL)
 * [Heroku](#Heroku)
 * [Run Flask App](#run-flask)
 * [Contacts](#contacts)
@@ -25,8 +24,18 @@ Have you ever played THE PERFECT game, sunk countless hours into it, only to hav
 
 
 ## Data Sources
+<center><img src="Resources/Read me images/Clean_df.PNG"></center>
 We found our data source via Kaggle.com. - [Game Data](https://www.kaggle.com/datasets/trentenberam/metacritic-games-all-time?select=metacritic_games_master.csv)-
 We used Jupyter Notebook to organize our data via Python/pandas. We dropped unncessary columns and renamed some to make better sense. We also utilized Amazon AWS by storing some of our larger files in an RDS bucket. 
+
+
+
+
+
+
+## Machine Learning
+<center><img src="Resources/Read me images/questionnaire.PNG"></center>
+we loaded our data in to a machine learning .. to train and test a model to predict game suggestions based on the questionare answers. 
 
 
 
@@ -45,8 +54,7 @@ We used Jupyter Notebook to organize our data via Python/pandas. We dropped unnc
 <center><img src="Resources/Read me images/website.jpg"></center>
 We utiized bootstrap to design our website. On our website you will find a questionaire to fill out to allow Video Game Buddy to suggest games you might enjoy. 
 
-## Machine Learning
-we loaded our data in to a machine learning .. to train and test a model to predict game suggestions based on the questionare answers. 
+
 
 ## Flask
 We used flask to pull the suggestions from our data to the questionaire. 
